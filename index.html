@@ -20,23 +20,64 @@ class: center, middle
 
 ---
 
-.left-column[
-  # Header
-]
-.right-column[
+# Object-Oriented Design
 
-Contents
+>  *Object-Oriented Design (OOD) is a programming approach that involves
+planning a system of interacting objects for the purpose of solving a software
+problem.*
 
-]
----
-
-# Header
-
-- Contents
-
-<center><img height="350" src="https://static01.nyt.com/images/2022/01/31/crosswords/wordle-art/wordle-art-mediumSquareAt3X.jpg"/></center>
+> * https://www.geeksforgeeks.org/oops-object-oriented-design/
 
 ---
+
+# Definitions
+
+- *Objects* include properties (or attributes) and methods that operate on those
+properties.
+
+- *Classes* provide the blueprint for an object. They define properties and
+methods.
+
+  * Example - BankAccount: 
+    - properties = balance; account_number
+    - methods = deposit; withdraw
+
+- An object is an *instance* of a class.
+
+- All data in python is represented by an object, e.g., strings, dictionaries, lists.
+
+---
+
+# Syntax for defining classes
+
+```python
+class ClassName: # uses CapWords naming convention
+
+    def __init__(self, initial_value):
+        """
+        Constructor.        
+        """
+        # initialize properties
+        self.property = initial value
+
+
+    def method(self, params):
+        # accepts self as a parameter
+        self.property += parameter 
+
+```
+
+---
+
+# Syntax for instantiating classes and calling methods
+
+```python
+
+var_name = ClassName(constructor_params)
+
+var_name.method(params)
+```
+
 ---
 <!-- .left-column[
   ## 
